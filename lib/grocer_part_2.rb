@@ -64,7 +64,6 @@ def checkout(cart, coupons)
     if total_price > 100.00 
       total_price = total_price - (total_price * 0.10)
     else 
-      binding.pry 
       total_price 
     end 
   end 
