@@ -32,7 +32,7 @@ def apply_clearance(cart)
   # REMEMBER: This method **should** update cart
   cart.each do |item|
     item.each do |k,v|
-    
+    binding.pry 
     end 
   end 
   
