@@ -68,7 +68,6 @@ def checkout(cart, coupons)
     total_price = total_price - (total_price * 0.10)
     end
     i += 1 
-    binding.pry 
   end 
   total_price 
 end
