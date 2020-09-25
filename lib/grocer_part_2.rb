@@ -61,5 +61,10 @@ def checkout(cart, coupons)
   consolidated_w_coupons_clearance = apply_clearance(consolidated_w_coupons)
   consolidated_w_coupons_clearance.each do |item|
     total_price = item[:price] * item[:count]
+    if total_price > 100.00 
+      total_price = total_price - (total_price * 0.10)
+    else 
+      total_price 
+    end 
   end 
 end
