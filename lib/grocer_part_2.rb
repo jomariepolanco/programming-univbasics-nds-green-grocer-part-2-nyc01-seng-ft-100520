@@ -38,7 +38,7 @@ def apply_clearance(cart)
         item[:price] = (item[:price] - (item[:price] * 0.20)).round(2)
       end 
     end
-    return cart 
+    cart 
   end 
   
   #price reduced by 20% if clearance = true 
