@@ -30,16 +30,18 @@ def apply_clearance(cart)
   #
   # REMEMBER: This method **should** update cart
   new_price_hash = []
-  cart.each do |item|
-      if item[:clearance] 
-       new_price = item[:price] = (item[:price] - (item[:price] * 0.20)).round(2)
+  i = 0 
+  while i < cart.length 
+      if cart[i][:clearance] == true 
+       new_price = cart[i][:price] = (cart[i][:price] - (cart[i][:price] * 0.20)).round(2)
        new_price_hash << {
-         :item => item[:item],
+         :item => cart[i][:item],
          :price => new_price,
-         :clearance => item[:clearance],
-         :count => item[:count]
+         :clearance => cart[i][:clearance],
+         :count => cart[i][:count]
        }
       end 
+      i += 1 
     end
     new_price_hash 
   end 
