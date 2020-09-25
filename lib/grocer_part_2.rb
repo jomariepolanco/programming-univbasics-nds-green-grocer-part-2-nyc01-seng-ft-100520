@@ -31,6 +31,7 @@ def apply_clearance(cart)
   # REMEMBER: This method **should** update cart
   i = 0 
   while i < cart.length 
+  binding.pry 
       if cart[i][:clearance] == true 
        new_price = cart[i][:price] = (cart[i][:price] - (cart[i][:price] * 0.20)).round(2)
        new_price_hash = {
