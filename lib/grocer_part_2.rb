@@ -33,12 +33,7 @@ def apply_clearance(cart)
   while i < cart.length 
       if cart[i][:clearance] == true 
        new_price = cart[i][:price] = (cart[i][:price] - (cart[i][:price] * 0.20)).round(2)
-       new_price_hash = {
-         :item => cart[i][:item],
-         :price => new_price,
-         :clearance => cart[i][:clearance],
-         :count => cart[i][:count]
-       }
+       cart[i][:price] = new_price 
       end 
       i += 1 
     end
