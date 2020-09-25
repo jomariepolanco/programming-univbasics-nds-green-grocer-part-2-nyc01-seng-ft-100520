@@ -50,7 +50,6 @@ def apply_clearance(cart)
   # if clearance of item == true 
   #reduce price by 20 %
   #else do nothing 
-end
 
 def checkout(cart, coupons)
   # Consult README for inputs and outputs
