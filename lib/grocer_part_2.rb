@@ -65,8 +65,8 @@ def checkout(cart, coupons)
     total << (final_cart[i][:price] * final_cart[i][:count])
     total_price = total.sum
     binding.pry 
-    if total > 100
-    total = total - (total * 0.10)
+    if total_price > 100
+    total_price = total_price - (total_price * 0.10)
     end
     i += 1 
   end 
