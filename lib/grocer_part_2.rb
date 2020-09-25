@@ -57,7 +57,9 @@ def checkout(cart, coupons)
   # some irritated customers
   
   consolidated_cart = consolidate_cart(cart)
-  binding.pry 
-  apply_coupons(consolidated_cart, coupons)
-  apply_clearance(consolidated_cart)
+  consolidated_w_coupons = apply_coupons(consolidated_cart, coupons)
+  consolidated_w_coupons_clearance = apply_clearance(consolidated_w_coupons)
+  consolidated_w_coupons_clearance.each do |item|
+    binding.pry 
+  end 
 end
