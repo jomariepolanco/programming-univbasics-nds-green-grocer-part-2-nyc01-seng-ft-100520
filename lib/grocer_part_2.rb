@@ -30,7 +30,15 @@ def apply_clearance(cart)
   # Consult README for inputs and outputs
   #
   # REMEMBER: This method **should** update cart
+  cart.each do |item|
+    binding.pry 
+  end 
+  
   #price reduced by 20% if clearance = true 
+  #iterate through cart 
+  # if clearance of item == true 
+  #reduce price by 20 %
+  #else do nothing 
 end
 
 def checkout(cart, coupons)
