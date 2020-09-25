@@ -57,16 +57,4 @@ def checkout(cart, coupons)
   # some irritated customers
   
   consolidated_cart = consolidate_cart(cart)
-  applied_coupons = apply_coupons(consolidated_cart, coupons)
-  final_cart = apply_clearance(applied_coupons)
-  total_price = 0 
-  i = 0 
-  while i < final_cart.size 
-    total_price += item[:price] * item[:count]
-    if total_price > 100.00 
-      total_price = total_price - (total_price * 0.10)
-    end
-    i += 1 
-  end 
-  total_price 
 end
