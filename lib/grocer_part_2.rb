@@ -42,6 +42,7 @@ def apply_clearance(cart)
       end 
       i += 1 
     end
+    binding.pry
     new_price_hash 
   end 
 
