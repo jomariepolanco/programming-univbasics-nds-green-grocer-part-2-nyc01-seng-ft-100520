@@ -43,7 +43,7 @@ def apply_clearance(cart)
        }
       end 
     end
-    cart 
+    new_price_hash 
   end 
   
   #price reduced by 20% if clearance = true 
