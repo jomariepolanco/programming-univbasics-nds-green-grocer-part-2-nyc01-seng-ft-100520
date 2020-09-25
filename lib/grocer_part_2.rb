@@ -34,8 +34,13 @@ def apply_clearance(cart)
   cart.each do |item|
     item.each do |k,v|
       if item[:clearance] 
-       new_price_
-        item[:price] = (item[:price] - (item[:price] * 0.20)).round(2)
+       new_price = item[:price] = (item[:price] - (item[:price] * 0.20)).round(2)
+       new_price_hash << {
+         :item => item[:item],
+         :price => new_price,
+         :clearance => item[:clearance],
+         :count => item[:count]
+       }
       end 
     end
     cart 
