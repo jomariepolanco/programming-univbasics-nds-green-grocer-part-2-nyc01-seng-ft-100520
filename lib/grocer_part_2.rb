@@ -13,7 +13,7 @@ def apply_coupons(cart, coupons)
     if cart_item_w_coupon && item_in_cart[:count] >= coupon[:num]
         cart_item_w_coupon[:count] += coupon[:num]
         item_in_cart[:count] -= coupon[:num]
-       elsif item_in_cart && item_in_cart[:count] >= coupon[:num]
+    elsif item_in_cart && item_in_cart[:count] >= coupon[:num]
         cart << {
           :item => coupon[:item] + " W/COUPON",
           :price => coupon[:cost] / coupon[:num],
@@ -30,6 +30,7 @@ def apply_clearance(cart)
   # Consult README for inputs and outputs
   #
   # REMEMBER: This method **should** update cart
+  #price reduced by 20% if clearance = true 
 end
 
 def checkout(cart, coupons)
