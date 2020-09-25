@@ -30,6 +30,7 @@ def apply_clearance(cart)
   # Consult README for inputs and outputs
   #
   # REMEMBER: This method **should** update cart
+  counter = 0 
   cart.each do |item|
     item.each do |k,v|
       if item[:clearance] 
