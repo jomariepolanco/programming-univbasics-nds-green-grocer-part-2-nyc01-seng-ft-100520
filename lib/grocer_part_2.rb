@@ -67,7 +67,6 @@ def checkout(cart, coupons)
     else 
       total_price 
     end
-    binding.pry 
-    puts "Hi"
   end 
+  total_price 
 end
