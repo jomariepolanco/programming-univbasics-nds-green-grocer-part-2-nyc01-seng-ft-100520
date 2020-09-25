@@ -29,7 +29,6 @@ def apply_clearance(cart)
   # Consult README for inputs and outputs
   #
   # REMEMBER: This method **should** update cart
-  new_price_hash = []
   i = 0 
   while i < cart.length 
       if cart[i][:clearance] == true 
