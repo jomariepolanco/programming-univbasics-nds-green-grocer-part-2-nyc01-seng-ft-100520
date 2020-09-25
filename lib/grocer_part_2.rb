@@ -44,12 +44,6 @@ def apply_clearance(cart)
     end
     new_price_hash 
   end 
-  
-  #price reduced by 20% if clearance = true 
-  #iterate through cart 
-  # if clearance of item == true 
-  #reduce price by 20 %
-  #else do nothing 
 
 def checkout(cart, coupons)
   # Consult README for inputs and outputs
@@ -61,4 +55,5 @@ def checkout(cart, coupons)
   #
   # BEFORE it begins the work of calculating the total (or else you might have
   # some irritated customers
+  
 end
