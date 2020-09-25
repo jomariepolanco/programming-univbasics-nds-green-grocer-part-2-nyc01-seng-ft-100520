@@ -36,7 +36,8 @@ def apply_clearance(cart)
        # binding.pry 
         item[:price] = ((1 - 0.20) * item[:price]).round(2)
       end 
-    end 
+    end
+    cart 
   end 
   
   #price reduced by 20% if clearance = true 
