@@ -38,7 +38,7 @@ def apply_clearance(cart)
       i += 1 
     end
     binding.pry
-    new_price_hash 
+    cart 
   end 
 
 def checkout(cart, coupons)
